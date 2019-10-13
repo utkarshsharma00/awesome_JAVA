@@ -1,7 +1,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 
-# Awesome_Java
+# awesome_JAVA
 A spectacular way to learn the insights of JAVA and Competitive Programming.<br/>
 
 

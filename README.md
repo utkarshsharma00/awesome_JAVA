@@ -5,4 +5,4 @@
 A spectacular way to learn the insights of JAVA and Competitive Programming.<br/>
 
 
-LEVEL_0 + LEVEL_1 : Insights of Loops and Conditional statements.<br/>
+LEVEL_00 + LEVEL_01 : Insights of Loops and Conditional statements.<br/>

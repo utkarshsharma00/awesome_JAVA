@@ -7,18 +7,12 @@ public class lof3 {
 		int b = 10;
 		int c = 20;
 
-		if (a >= b && a >= c) 
-		{
+		if (a >= b && a >= c) {
 			System.out.println(a);
-		} 
-		else 
-		{
-			if (b >= c) 
-			{
+		} else {
+			if (b >= c) {
 				System.out.println(b);
-			} 
-			else 
-			{
+			} else {
 				System.out.println(c);
 			}
 		}

@@ -1,8 +1,6 @@
-package feb3;
-
 import java.util.Scanner;
 
-public class pat8 {
+public class pat9 {
 
 	public static void main(String[] args) {
 		int[] arr = { 2, 7, 3, 4, 5 };
@@ -12,7 +10,17 @@ public class pat8 {
 				max = arr[i];
 			}
 		}
-  //TODO
+
+		for (int i = 1; i <= max; i++) {
+			for (int j = 0; j <= 4; j++) {
+				if (i >= max - arr[j] + 1) {
+					System.out.print("*");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
 	}
 
 }

@@ -1,5 +1,3 @@
-package feb4;
-
 import java.util.Scanner;
 
 public class octal_addition {

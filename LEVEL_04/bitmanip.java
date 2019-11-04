@@ -1,3 +1,5 @@
+import java.util.*
+
 public class bitmanip {
 
 	public static void main(String[] args) {

@@ -9,6 +9,21 @@ public class binarySearch {
 		int lo = 0;
 		int hi = arr.length - 1;
 		int res = -1;
+		
+		while(lo <= hi){
+			int mid = (lo + hi) / 2;
+			
+			if(data > arr[mid]){
+				lo = mid + 1;
+			} else if(data < arr[mid]){
+				hi = mid - 1;
+			} else {
+				res = mid;
+				lo = mid + 1;
+			}
+		}
+		
+		System.out.println(res);
     
     }
 

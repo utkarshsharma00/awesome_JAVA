@@ -16,6 +16,13 @@ public class rotate {
 		System.out.println(".");
 		
 	}
-	//TODO
+	
+	private static void reverse(int[] arr, int lo, int hi){
+		for(int left = lo, right = hi; left < right; left++, right--){
+			int temp = arr[left];
+			arr[left] = arr[right];
+			arr[right] = temp;
+		}
+	}
 
 }

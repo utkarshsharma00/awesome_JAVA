@@ -51,7 +51,23 @@ public class recursion2 {
 
 		return xpn;
 	}
-  
+	
+	private static int powerfakebtr(int x, int n) {
+		if (n == 0) {
+			return 1;
+		}
+
+		int xpn = 1;
+
+		if (n % 2 == 0) {
+			xpn = powerfakebtr(x, n / 2) * powerfakebtr(x, n / 2);
+		} else {
+			xpn = powerfakebtr(x, n / 2) * powerfakebtr(x, n / 2) * x;
+		}
+
+		return xpn;
+	}
+
   	public static void display(int[] arr, int sp) {
 		if (sp == arr.length) {
 			return;

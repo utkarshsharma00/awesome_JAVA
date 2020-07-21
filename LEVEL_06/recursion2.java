@@ -14,8 +14,45 @@ public class recursion2 {
 			System.out.println(res[i]);
 		}
 	}
+	
+	private static int factorial(int n) {
+		if (n == 0) {
+			return 1;
+		}
+
+		int fnm1 = factorial(n - 1);
+		int fn = n * fnm1;
+		return fn;
+	}
+
+	private static int power(int x, int n) {
+		if (n == 0) {
+			return 1;
+		}
+
+		int xpnm1 = power(x, n - 1);
+		int xpn = xpnm1 * x;
+		return xpn;
+	}
+
+	private static int powerbtr(int x, int n) {
+		if (n == 0) {
+			return 1;
+		}
+
+		int xpnb2 = powerbtr(x, n / 2);
+		int xpn = 1;
+
+		if (n % 2 == 0) {
+			xpn = xpnb2 * xpnb2;
+		} else {
+			xpn = xpnb2 * xpnb2 * x;
+		}
+
+		return xpn;
+	}
   
-  public static void display(int[] arr, int sp) {
+  	public static void display(int[] arr, int sp) {
 		if (sp == arr.length) {
 			return;
 		}

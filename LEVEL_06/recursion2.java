@@ -85,5 +85,33 @@ public class recursion2 {
 		displayr(arr, sp + 1);
 		System.out.println(arr[sp]);
 	}
+	
+	public static int max(int[] arr, int sp) {
+		if (sp == arr.length) {
+			return Integer.MIN_VALUE;
+		}
+
+		int misa = max(arr, sp + 1);
+		if (misa > arr[sp]) {
+			return misa;
+		} else {
+			return arr[sp];
+		}
+	}
+
+	public static boolean findstupid(int[] arr, int sp, int data) {
+		if (sp == arr.length) {
+			return false;
+		}
+
+		boolean fisa = findstupid(arr, sp + 1, data);
+		if (fisa == true) {
+			return true;
+		} else if (arr[sp] == data) {
+			return true;
+		} else {
+			return false;
+		}
+	}
   
 }

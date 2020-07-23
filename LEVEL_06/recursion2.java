@@ -155,5 +155,23 @@ public class recursion2 {
 			return -1;
 		}
 	}
+	
+	public static int[] allidces(int[] arr, int sp, int data, int csf) {
+		if (sp == arr.length) {
+			return new int[csf];
+		}
+
+		if (arr[sp] == data) {
+			csf++;
+		}
+
+		int[] res = allidces(arr, sp + 1, data, csf);
+
+		if (arr[sp] == data) {
+			res[csf - 1] = sp;
+		}
+		
+		return res;
+	}
   
 }

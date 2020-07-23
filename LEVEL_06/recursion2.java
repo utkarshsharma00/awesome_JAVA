@@ -113,5 +113,47 @@ public class recursion2 {
 			return false;
 		}
 	}
+	
+	public static boolean findsmart(int[] arr, int sp, int data) {
+		if (sp == arr.length) {
+			return false;
+		}
+
+		if (arr[sp] == data) {
+			return true;
+		}
+
+		boolean fisa = findsmart(arr, sp + 1, data);
+		return fisa;
+	}
+
+	public static int fi(int[] arr, int sp, int data) {
+		if (sp == arr.length) {
+			return -1;
+		}
+		if (arr[sp] == data) {
+			return sp;
+		}
+
+		int fiisa = fi(arr, sp + 1, data);
+		return fiisa;
+	}
+
+	// li(arr, 0, 11) -> expected to return the last idx of 11 from 0 to end
+	// li(arr, 1, 11) -> it will return the last idx of 11 from 1 to end
+	public static int li(int[] arr, int sp, int data) {
+		if (sp == arr.length) {
+			return -1;
+		}
+
+		int liisa = li(arr, sp + 1, data);
+		if (liisa != -1) {
+			return liisa;
+		} else if (arr[sp] == data) {
+			return sp;
+		} else {
+			return -1;
+		}
+	}
   
 }
